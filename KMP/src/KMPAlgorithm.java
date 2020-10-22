@@ -2,9 +2,9 @@ import java.util.Arrays;
 
 public class KMPAlgorithm {
     public static void main(String[] args) {
-        String s1 = "BBC ABCDAB ABCDABCDABE";
+        String s1 = "BBC ABCDAB ABCDABCDABD";
         String s2 = "ABCDABD";
-        System.out.println(Arrays.toString(kmpNext("ABCDABD")));
+        System.out.println(kmpSearch(s1, s2));
     }
     public static int kmpSearch(String s1, String s2){
         int[] ints = kmpNext(s2);
